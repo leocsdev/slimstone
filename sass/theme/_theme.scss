@@ -78,9 +78,14 @@ $grey: #989898;
 
         justify-content: center;
         align-items: center;
-
         border-radius: 3px;
-        
+
+
+        &:hover {
+          background-color: darken($grey, 15%);
+          color: #ffffff;
+          text-decoration: none;
+        }
       }
     }
   }
