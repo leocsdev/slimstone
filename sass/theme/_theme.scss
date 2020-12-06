@@ -1,1 +1,66 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+// set scss variables
+$primary: #ff6a14;
+$grey: #989898;
+
+// HEADER
+#wrapper-navbar {
+  #main-nav {
+    background-color: $grey;
+    padding: 0;
+
+    ul {
+      li {
+        padding-top: 5px;
+  
+        &:hover {
+          background-color: #b4b4b4;
+        }
+  
+        a {
+          color: #ffffff;
+          font-size: 18px;
+          font-weight: 500;
+  
+          padding-top: 15px;
+          padding-bottom: 20px;
+          padding-left: 15px;
+          padding-right: 15px;
+  
+          border-top-left-radius: 6px;
+          border-top-right-radius: 6px;
+        }
+  
+        &.current_page_item {
+          a {
+            // set the current page item selected to white bg
+            color: $primary;
+            background-color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .top-header-social-media {
+      a {
+        width: 25px;
+        height: 25px;
+        background-color: #ffffff;
+        color: $grey;
+        font-size: 18px;
+
+        // display: inline-block;
+        
+        // this will allow to justify the content of a
+        display: inline-flex;
+
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 3px;
+        
+      }
+    }
+  }
+}
